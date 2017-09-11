@@ -37,6 +37,9 @@ class HomeViewController: UIViewController {
     var gravityBehaviour: UIGravityBehavior!
     var snapBehaviour: UISnapBehavior!
     
+    //Data
+    var data = getData()
+    
     
     @IBAction func likeButton(_ sender: Any) {
         
@@ -141,6 +144,13 @@ class HomeViewController: UIViewController {
         }
         
         animator = UIDynamicAnimator(referenceView: view)
+        
+        //Change Avatar
+        avatarImageView.image = UIImage(named:data[2]["avatar"]!)
+        imageButton.setImage(UIImage(named:data[2]["image"]!), for: UIControlState.normal)
+        backgroundImage.image = UIImage(named:data[2]["image"]!)
+        authorLabel.text = data[2]["author"]
+        titleLabel.text = data[2]["title"]
     }
 
     @IBAction func handleGesture(recognizer:UIPanGestureRecognizer) {
