@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3435055A1F53631F005E89DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343505591F53631F005E89DF /* AppDelegate.swift */; };
-		3435055C1F53631F005E89DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435055B1F53631F005E89DF /* ViewController.swift */; };
 		3435055F1F53631F005E89DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3435055D1F53631F005E89DF /* Main.storyboard */; };
 		343505611F53631F005E89DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343505601F53631F005E89DF /* Assets.xcassets */; };
 		343505641F53631F005E89DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343505621F53631F005E89DF /* LaunchScreen.storyboard */; };
 		3435056F1F53631F005E89DF /* AvatarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435056E1F53631F005E89DF /* AvatarTests.swift */; };
 		3435057A1F53631F005E89DF /* AvatarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343505791F53631F005E89DF /* AvatarUITests.swift */; };
+		3435058B1F53670D005E89DF /* TipoType - Libertad.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3435058A1F53670D005E89DF /* TipoType - Libertad.otf */; };
+		3435058D1F54A16C005E89DF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435058C1F54A16C005E89DF /* HomeViewController.swift */; };
+		34D6036A1F5E399C001AFA95 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D603691F5E399C001AFA95 /* DetailViewController.swift */; };
+		34D6036C1F5EB2EE001AFA95 /* springAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6036B1F5EB2EE001AFA95 /* springAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		343505561F53631F005E89DF /* Avatar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avatar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		343505591F53631F005E89DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3435055B1F53631F005E89DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3435055E1F53631F005E89DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		343505601F53631F005E89DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		343505631F53631F005E89DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		343505751F53631F005E89DF /* AvatarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvatarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		343505791F53631F005E89DF /* AvatarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarUITests.swift; sourceTree = "<group>"; };
 		3435057B1F53631F005E89DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3435058A1F53670D005E89DF /* TipoType - Libertad.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TipoType - Libertad.otf"; sourceTree = "<group>"; };
+		3435058C1F54A16C005E89DF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
+		34D603691F5E399C001AFA95 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		34D6036B1F5EB2EE001AFA95 /* springAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = springAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 		343505581F53631F005E89DF /* Avatar */ = {
 			isa = PBXGroup;
 			children = (
+				343505891F53670D005E89DF /* font */,
 				343505591F53631F005E89DF /* AppDelegate.swift */,
-				3435055B1F53631F005E89DF /* ViewController.swift */,
+				3435058C1F54A16C005E89DF /* HomeViewController.swift */,
+				34D6036B1F5EB2EE001AFA95 /* springAnimation.swift */,
+				34D603691F5E399C001AFA95 /* DetailViewController.swift */,
 				3435055D1F53631F005E89DF /* Main.storyboard */,
 				343505601F53631F005E89DF /* Assets.xcassets */,
 				343505621F53631F005E89DF /* LaunchScreen.storyboard */,
@@ -123,6 +132,14 @@
 				3435057B1F53631F005E89DF /* Info.plist */,
 			);
 			path = AvatarUITests;
+			sourceTree = "<group>";
+		};
+		343505891F53670D005E89DF /* font */ = {
+			isa = PBXGroup;
+			children = (
+				3435058A1F53670D005E89DF /* TipoType - Libertad.otf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,15 +210,18 @@
 				TargetAttributes = {
 					343505551F53631F005E89DF = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					343505691F53631F005E89DF = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 343505551F53631F005E89DF;
 					};
 					343505741F53631F005E89DF = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 343505551F53631F005E89DF;
 					};
@@ -232,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3435058B1F53670D005E89DF /* TipoType - Libertad.otf in Resources */,
 				343505641F53631F005E89DF /* LaunchScreen.storyboard in Resources */,
 				343505611F53631F005E89DF /* Assets.xcassets in Resources */,
 				3435055F1F53631F005E89DF /* Main.storyboard in Resources */,
@@ -259,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3435055C1F53631F005E89DF /* ViewController.swift in Sources */,
+				34D6036A1F5E399C001AFA95 /* DetailViewController.swift in Sources */,
 				3435055A1F53631F005E89DF /* AppDelegate.swift in Sources */,
+				3435058D1F54A16C005E89DF /* HomeViewController.swift in Sources */,
+				34D6036C1F5EB2EE001AFA95 /* springAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +526,7 @@
 				343505801F53631F005E89DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		343505811F53631F005E89DF /* Build configuration list for PBXNativeTarget "AvatarTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +535,7 @@
 				343505831F53631F005E89DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		343505841F53631F005E89DF /* Build configuration list for PBXNativeTarget "AvatarUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +544,7 @@
 				343505861F53631F005E89DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
