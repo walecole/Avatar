@@ -15,6 +15,7 @@
 		3435057A1F53631F005E89DF /* AvatarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343505791F53631F005E89DF /* AvatarUITests.swift */; };
 		3435058B1F53670D005E89DF /* TipoType - Libertad.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3435058A1F53670D005E89DF /* TipoType - Libertad.otf */; };
 		3435058D1F54A16C005E89DF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435058C1F54A16C005E89DF /* HomeViewController.swift */; };
+		344900651F66A8BA00020990 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344900641F66A8BA00020990 /* Data.swift */; };
 		34D6036A1F5E399C001AFA95 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D603691F5E399C001AFA95 /* DetailViewController.swift */; };
 		34D6036C1F5EB2EE001AFA95 /* springAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6036B1F5EB2EE001AFA95 /* springAnimation.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		3435057B1F53631F005E89DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3435058A1F53670D005E89DF /* TipoType - Libertad.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TipoType - Libertad.otf"; sourceTree = "<group>"; };
 		3435058C1F54A16C005E89DF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
+		344900641F66A8BA00020990 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		34D603691F5E399C001AFA95 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		34D6036B1F5EB2EE001AFA95 /* springAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = springAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +108,7 @@
 				343505891F53670D005E89DF /* font */,
 				343505591F53631F005E89DF /* AppDelegate.swift */,
 				3435058C1F54A16C005E89DF /* HomeViewController.swift */,
+				344900641F66A8BA00020990 /* Data.swift */,
 				34D6036B1F5EB2EE001AFA95 /* springAnimation.swift */,
 				34D603691F5E399C001AFA95 /* DetailViewController.swift */,
 				3435055D1F53631F005E89DF /* Main.storyboard */,
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34D6036A1F5E399C001AFA95 /* DetailViewController.swift in Sources */,
+				344900651F66A8BA00020990 /* Data.swift in Sources */,
 				3435055A1F53631F005E89DF /* AppDelegate.swift in Sources */,
 				3435058D1F54A16C005E89DF /* HomeViewController.swift in Sources */,
 				34D6036C1F5EB2EE001AFA95 /* springAnimation.swift in Sources */,
