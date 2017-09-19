@@ -11,7 +11,7 @@ import UIKit
 func getData() -> Array<Dictionary<String,String>> {
     
     let data = [
-        ["title" : "Bug",
+        ["title" : "Insect",
          "author" : "Wale",
          "image" : "image",
          "avatar" : "avatar",
@@ -31,7 +31,7 @@ func getData() -> Array<Dictionary<String,String>> {
         ],
         ["title" : "Music",
          "author" : "Segun",
-         "image" : "image",
+         "image" : "image4",
          "avatar" : "avatar4",
          "text" : "A random text about the image goes in here"
         ],

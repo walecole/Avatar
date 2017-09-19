@@ -39,6 +39,7 @@ class HomeViewController: UIViewController {
     
     //Data
     var data = getData()
+    var number = 0
     
     
     @IBAction func likeButton(_ sender: Any) {
@@ -130,7 +131,11 @@ class HomeViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
+        
+        
 
         let scale = CGAffineTransform(scaleX: 0.5, y: 0.5)
         let translate = CGAffineTransform(translationX: 0,y: -200 )
@@ -146,11 +151,13 @@ class HomeViewController: UIViewController {
         animator = UIDynamicAnimator(referenceView: view)
         
         //Change Avatar
-        avatarImageView.image = UIImage(named:data[2]["avatar"]!)
-        imageButton.setImage(UIImage(named:data[2]["image"]!), for: UIControlState.normal)
-        backgroundImage.image = UIImage(named:data[2]["image"]!)
-        authorLabel.text = data[2]["author"]
-        titleLabel.text = data[2]["title"]
+        avatarImageView.image = UIImage(named:data[number]["avatar"]!)
+        imageButton.setImage(UIImage(named:data[number]["image"]!), for: UIControlState.normal)
+        backgroundImage.image = UIImage(named:data[number]["image"]!)
+        authorLabel.text = data[number]["author"]
+        titleLabel.text = data[number]["title"]
+        
+        
     }
 
     @IBAction func handleGesture(recognizer:UIPanGestureRecognizer) {
@@ -175,10 +182,13 @@ class HomeViewController: UIViewController {
             
             let translation = recognizer.translation(in: view)
             if translation.y > 100 {
-                animator.removeAllBehaviors()
-                let gravity = UIGravityBehavior(items: [dialogView])
-                gravity.gravityDirection = CGVector(dx: 0, dy: 10)
-                animator.addBehavior(gravity)
+                spring(duration: 0.3){
+                    self.refreshView()
+                }
+                
+               // let gravity = UIGravityBehavior(items: [dialogView])
+                //gravity.gravityDirection = CGVector(dx: 0, dy: 10)
+                //animator.addBehavior(gravity)
          }
         }
         
@@ -189,15 +199,31 @@ class HomeViewController: UIViewController {
     }
     
 
-    /*
+    func refreshView(){
+        number += 1
+        if number > 3{
+            number = 0
+        }
+        animator.removeAllBehaviors()
+        
+        snapBehaviour = UISnapBehavior(item: dialogView!, snapTo: view.center)
+        attachmentBehaviour.anchorPoint = view.center
+        dialogView.center = view.center
+        viewDidLoad()
+    }
+    
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "homeToDetail" {
+            let controller = segue.destination as! DetailViewController
+            controller.data = data
+            controller.number = number
+        }
+        
     }
-    */
+    
     
     
 

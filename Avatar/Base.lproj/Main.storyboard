@@ -41,6 +41,14 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="280" height="210"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ax4-xI-eZc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="210"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" backgroundImage="image"/>
+                                                    <connections>
+                                                        <action selector="imageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kkm-Yn-YFN"/>
+                                                    </connections>
+                                                </button>
                                                 <visualEffectView opaque="NO" contentMode="scaleToFill" misplaced="YES" id="NFa-WY-EF8">
                                                     <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -48,22 +56,22 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1BB-Sf-g8c">
-                                                                <rect key="frame" x="117" y="8" width="46" height="19"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1BB-Sf-g8c">
+                                                                <rect key="frame" x="85" y="8" width="110" height="19"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="20"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wale | Creative Minds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lNb-sF-zsK">
-                                                                <rect key="frame" x="85" y="35" width="110" height="11"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lNb-sF-zsK">
+                                                                <rect key="frame" x="100" y="35" width="66" height="11"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="12"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="avatar" id="Fb0-iV-GPj">
-                                                                <rect key="frame" x="62" y="33" width="15" height="15"/>
+                                                                <rect key="frame" x="90" y="33" width="15" height="15"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -112,15 +120,9 @@
                                                         <action selector="shareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Spb-Hp-naC"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ax4-xI-eZc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="210"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <connections>
-                                                        <action selector="imageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kkm-Yn-YFN"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <gestureRecognizers/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -300,7 +302,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backbutton"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="6hl-O1-S1Z"/>
+                                    <action selector="backButton:" destination="BpC-7V-Mqo" eventType="touchUpInside" id="ckB-u7-y6f"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="avatar" id="GDb-lQ-ox3">
@@ -312,7 +314,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wale | Creative Minds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ndJ-Gz-198">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wale | Creative Minds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ndJ-Gz-198">
                                 <rect key="frame" x="64" y="271" width="216" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="20"/>
@@ -323,6 +325,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="6Vd-lx-Ggc"/>
+                    <connections>
+                        <outlet property="authorLabel" destination="ndJ-Gz-198" id="Edg-yN-y7i"/>
+                        <outlet property="avatarImageView" destination="GDb-lQ-ox3" id="WUR-Zs-SVv"/>
+                        <outlet property="backButton" destination="CvA-a9-fH0" id="HK9-Eq-FBj"/>
+                        <outlet property="imaegView" destination="hhL-TF-lxy" id="ZXI-5n-j5Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSF-pJ-UDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
