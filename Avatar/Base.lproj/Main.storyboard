@@ -300,9 +300,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CvA-a9-fH0">
                                 <rect key="frame" x="20" y="20" width="41" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="backbutton"/>
+                                <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
-                                    <action selector="backButton:" destination="BpC-7V-Mqo" eventType="touchUpInside" id="ckB-u7-y6f"/>
+                                    <action selector="returnButton:" destination="BpC-7V-Mqo" eventType="touchUpInside" id="sMT-ps-9O6"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="avatar" id="GDb-lQ-ox3">
@@ -328,8 +328,9 @@
                     <connections>
                         <outlet property="authorLabel" destination="ndJ-Gz-198" id="Edg-yN-y7i"/>
                         <outlet property="avatarImageView" destination="GDb-lQ-ox3" id="WUR-Zs-SVv"/>
-                        <outlet property="backButton" destination="CvA-a9-fH0" id="HK9-Eq-FBj"/>
+                        <outlet property="backButton" destination="CvA-a9-fH0" id="1dv-eN-GGg"/>
                         <outlet property="imaegView" destination="hhL-TF-lxy" id="ZXI-5n-j5Z"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="detailToHome" animates="NO" id="7hj-nJ-n1F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSF-pJ-UDc" userLabel="First Responder" sceneMemberID="firstResponder"/>

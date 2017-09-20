@@ -15,7 +15,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var imaegView: UIImageView!
     @IBOutlet weak var authorLabel: UILabel!
     
-    var data = getData()
+    var data = Array<Dictionary<String,String>>()
     var number = 0
     
     override func viewDidLoad() {
@@ -27,9 +27,11 @@ class DetailViewController: UIViewController {
         
     }
 
-    @IBAction func backButton(_ sender: Any) {
+    @IBAction func returnButton(_ sender: Any) {
         performSegue(withIdentifier: "detailToHome", sender: sender)
+        
     }
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -40,7 +42,7 @@ class DetailViewController: UIViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
         if segue.identifier == "detailToHome" {
             let controller  = segue.destination as! HomeViewController
             controller.data = data
